@@ -1,0 +1,155 @@
+PS C:\Users\Praneeth Mopuri\Desktop\Covid19 Data Analysis> python Covid19_Analysis.py
+      iso_code continent       location      date  ...  handwashing_facilities  hospital_beds_per_thousand  life_expectancy  human_development_index
+0          AFG      Asia    Afghanistan  31/12/19  ...                  37.746                         0.5            64.83                    0.498
+1          AFG      Asia    Afghanistan  01/01/20  ...                  37.746                         0.5            64.83                    0.498
+2          AFG      Asia    Afghanistan  02/01/20  ...                  37.746                         0.5            64.83                    0.498
+3          AFG      Asia    Afghanistan  03/01/20  ...                  37.746                         0.5            64.83                    0.498
+4          AFG      Asia    Afghanistan  04/01/20  ...                  37.746                         0.5            64.83                    0.498
+...        ...       ...            ...       ...  ...                     ...                         ...              ...                      ...
+57389      NaN       NaN  International  13/11/20  ...                     NaN                         NaN              NaN                      NaN
+57390      NaN       NaN  International  14/11/20  ...                     NaN                         NaN              NaN                      NaN
+57391      NaN       NaN  International  15/11/20  ...                     NaN                         NaN              NaN                      NaN
+57392      NaN       NaN  International  16/11/20  ...                     NaN                         NaN              NaN                      NaN
+57393      NaN       NaN  International  17/11/20  ...                     NaN                         NaN              NaN                      NaN
+
+[57394 rows x 49 columns]
+Number of rows and columns: (57394, 49)
+
+Data types of columns:
+ iso_code                               object
+continent                              object
+location                               object
+date                                   object
+total_cases                           float64
+new_cases                             float64
+new_cases_smoothed                    float64
+total_deaths                          float64
+new_deaths                            float64
+new_deaths_smoothed                   float64
+total_cases_per_million               float64
+new_cases_per_million                 float64
+new_cases_smoothed_per_million        float64
+total_deaths_per_million              float64
+new_deaths_per_million                float64
+new_deaths_smoothed_per_million       float64
+reproduction_rate                     float64
+icu_patients                          float64
+icu_patients_per_million              float64
+hosp_patients                         float64
+hosp_patients_per_million             float64
+weekly_icu_admissions                 float64
+weekly_icu_admissions_per_million     float64
+weekly_hosp_admissions                float64
+weekly_hosp_admissions_per_million    float64
+total_tests                           float64
+new_tests                             float64
+total_tests_per_thousand              float64
+new_tests_per_thousand                float64
+new_tests_smoothed                    float64
+new_tests_smoothed_per_thousand       float64
+tests_per_case                        float64
+positive_rate                         float64
+stringency_index                      float64
+population                            float64
+population_density                    float64
+median_age                            float64
+aged_65_older                         float64
+aged_70_older                         float64
+gdp_per_capita                        float64
+extreme_poverty                       float64
+cardiovasc_death_rate                 float64
+diabetes_prevalence                   float64
+female_smokers                        float64
+male_smokers                          float64
+handwashing_facilities                float64
+hospital_beds_per_thousand            float64
+life_expectancy                       float64
+human_development_index               float64
+dtype: object
+
+Info of data:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 57394 entries, 0 to 57393
+Data columns (total 49 columns):
+ #   Column                              Non-Null Count  Dtype
+---  ------                              --------------  -----
+ 0   iso_code                            57071 non-null  object
+ 1   continent                           56748 non-null  object
+ 2   location                            57394 non-null  object
+ 3   date                                57394 non-null  object
+ 4   total_cases                         53758 non-null  float64
+ 5   new_cases                           56465 non-null  float64
+ 6   new_cases_smoothed                  55652 non-null  float64
+ 7   total_deaths                        44368 non-null  float64
+ 8   new_deaths                          56465 non-null  float64
+ 9   new_deaths_smoothed                 55652 non-null  float64
+ 10  total_cases_per_million             53471 non-null  float64
+ 11  new_cases_per_million               56401 non-null  float64
+ 12  new_cases_smoothed_per_million      55587 non-null  float64
+ 13  total_deaths_per_million            44096 non-null  float64
+ 14  new_deaths_per_million              56401 non-null  float64
+ 15  new_deaths_smoothed_per_million     55587 non-null  float64
+ 16  reproduction_rate                   37696 non-null  float64
+ 17  icu_patients                        4490 non-null   float64
+ 18  icu_patients_per_million            4490 non-null   float64
+ 19  hosp_patients                       5005 non-null   float64
+ 20  hosp_patients_per_million           5005 non-null   float64
+ 21  weekly_icu_admissions               357 non-null    float64
+ 22  weekly_icu_admissions_per_million   357 non-null    float64
+ 23  weekly_hosp_admissions              645 non-null    float64
+ 24  weekly_hosp_admissions_per_million  645 non-null    float64
+ 25  total_tests                         22017 non-null  float64
+ 26  new_tests                           21787 non-null  float64
+ 27  total_tests_per_thousand            22017 non-null  float64
+ 28  new_tests_per_thousand              21787 non-null  float64
+ 29  new_tests_smoothed                  24612 non-null  float64
+ 30  new_tests_smoothed_per_thousand     24612 non-null  float64
+ 31  tests_per_case                      22802 non-null  float64
+ 32  positive_rate                       23211 non-null  float64
+ 33  stringency_index                    47847 non-null  float64
+ 34  population                          57071 non-null  float64
+ 35  population_density                  54371 non-null  float64
+ 36  median_age                          51034 non-null  float64
+ 37  aged_65_older                       50265 non-null  float64
+ 38  aged_70_older                       50768 non-null  float64
+ 39  gdp_per_capita                      50367 non-null  float64
+ 40  extreme_poverty                     33571 non-null  float64
+ 41  cardiovasc_death_rate               51013 non-null  float64
+ 42  diabetes_prevalence                 52881 non-null  float64
+ 43  female_smokers                      39669 non-null  float64
+ 44  male_smokers                        39156 non-null  float64
+ 45  handwashing_facilities              24176 non-null  float64
+ 46  hospital_beds_per_thousand          45936 non-null  float64
+ 47  life_expectancy                     56336 non-null  float64
+ 48  human_development_index             49247 non-null  float64
+dtypes: float64(45), object(4)
+memory usage: 21.5+ MB
+
+Description of data:
+         total_cases      new_cases  new_cases_smoothed  total_deaths  ...  handwashing_facilities  hospital_beds_per_thousand  life_expectancy  human_d
+count  5.375800e+04   56465.000000        55652.000000  4.436800e+04  ...            24176.000000                45936.000000     56336.000000          
+mean   1.677974e+05    1953.576941         1920.431953  6.858639e+03  ...               52.089636                    3.089724        73.937780          
+std    1.693038e+06   18269.650340        17777.391785  5.578081e+04  ...               31.645306                    2.513193         7.397016          
+min    1.000000e+00   -8261.000000         -552.000000  1.000000e+00  ...                1.188000                    0.100000        53.280000          
+25%    1.800000e+02       0.000000            0.857000  1.300000e+01  ...               21.222000                    1.300000        69.870000          
+50%    2.070000e+03      14.000000           19.429000  8.400000e+01  ...               52.232000                    2.500000        75.345000          
+75%    2.235675e+04     235.000000          245.286000  7.270000e+02  ...               83.741000                    4.200000        79.380000          
+max    5.515465e+07  646281.000000       584981.857000  1.328537e+06  ...               98.999000                   13.800000        86.750000          
+
+[8 rows x 45 columns]
+
+Count of unique values in 'location' column: 216
+
+Continent with maximum frequency: Europe
+
+Maximum and mean value in 'total_cases': 55154651.0 167797.3688753302
+ 0.25     13.0
+0.75    727.0
+Name: total_deaths, dtype: float64
+
+Continent with maximum 'human_development_index': Europe
+
+Continent with minimum 'gdp_per_capita': Africa
+df_groupby DataFrame saved as 'df_groupby.csv' in the local directory.
+PS C:\Users\Praneeth Mopuri\Desktop\Covid19 Data Analysis>
+                               
