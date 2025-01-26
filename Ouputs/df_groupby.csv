@@ -1,0 +1,7 @@
+continent,location,date,total_cases,total_deaths,gdp_per_capita,human_development_index
+Africa,Zimbabwe,2020-11-17,752269.0,20314.0,26382.287,0.797
+Asia,Yemen,2020-11-17,8874290.0,130519.0,116935.6,0.933
+Europe,Vatican,2020-11-17,1991233.0,52147.0,94277.965,0.953
+North America,United States Virgin Islands,2020-11-17,11205486.0,247220.0,54225.446,0.926
+Oceania,Wallis and Futuna,2020-11-17,27750.0,907.0,44648.71,0.939
+South America,Venezuela,2020-11-17,5876464.0,166014.0,22767.037,0.843
